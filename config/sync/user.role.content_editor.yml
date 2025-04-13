@@ -1,0 +1,22 @@
+uuid: 003dbbed-488b-4fd0-b6c5-8363bbddcf64
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+  module:
+    - filter
+    - node
+    - system
+_core:
+  default_config_hash: g-zSnaBXJnH7VoimReFb6KcLjIgHCU-hisiShtZ9hjQ
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view own unpublished content'

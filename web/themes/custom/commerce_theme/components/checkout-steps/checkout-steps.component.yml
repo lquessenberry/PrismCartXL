@@ -1,0 +1,69 @@
+label: Checkout Steps
+description: >
+  A component for displaying the checkout process steps.
+
+fields:
+  steps:
+    type: collection
+    label: Checkout Steps
+    description: List of checkout steps
+    items:
+      title:
+        type: text
+        label: Title
+        description: Step title
+        required: true
+      description:
+        type: text
+        label: Description
+        description: Step description
+        required: false
+      icon:
+        type: text
+        label: Icon
+        description: Step icon
+        required: false
+      status:
+        type: select
+        label: Status
+        description: Step status
+        options:
+          active: Active
+          completed: Completed
+          pending: Pending
+          disabled: Disabled
+        default: pending
+        required: true
+
+  layout:
+    type: select
+    label: Layout
+    description: Steps layout style
+    options:
+      horizontal: Horizontal
+      vertical: Vertical
+      numbers: Numbers
+      icons: Icons
+    default: horizontal
+    required: true
+
+  show_progress:
+    type: boolean
+    label: Show Progress
+    description: Display progress indicator
+    default: true
+    required: false
+
+  show_descriptions:
+    type: boolean
+    label: Show Descriptions
+    description: Display step descriptions
+    default: true
+    required: false
+
+  show_icons:
+    type: boolean
+    label: Show Icons
+    description: Display step icons
+    default: true
+    required: false

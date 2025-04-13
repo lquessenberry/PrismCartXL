@@ -1,0 +1,17 @@
+fragment ProductSpecifications on Paragraph {
+  __typename
+  id
+  layout
+  style
+  alignment
+  spacing
+  show_units
+  specifications {
+    category
+    items {
+      label
+      value
+      unit
+    }
+  }
+}

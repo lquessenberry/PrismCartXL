@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function commerce_demo_test_help($route_name, \Drupal\Core\Render\RendererInterface $renderer) {
+  switch ($route_name) {
+    case 'help.page.commerce_demo_test':
+      $output = \Drupal::translation()->translate(
+        '<h2>Commerce Demo Test Module</h2>
+        <p>This module provides demo content and configuration for Commerce.</p>
+        <p>It includes:</p>
+        <ul>
+          <li>Sample products with variations</li>
+          <li>Product attributes (color, size, material)</li>
+          <li>Sample orders and customers</li>
+          <li>Store configuration</li>
+        </ul>
+        <p>To generate demo content, visit the demo page at:</p>
+        <code>/demo/commerce</code>
+        '
+      );
+      return $output;
+  }
+}

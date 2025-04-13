@@ -1,0 +1,18 @@
+uuid: 12345678-1234-1234-1234-1234567890ab
+langcode: en
+type: paragraph
+bundle: product_grid
+mode: default
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - commerce_product
+content:
+  field_product:
+    type: product_grid_formatter
+    weight: 0
+    label: hidden
+    settings: {}
+    third_party_settings: {}
+hidden: {}

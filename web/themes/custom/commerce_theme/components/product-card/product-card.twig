@@ -1,0 +1,44 @@
+{% set classes = [
+  'product-card',
+  'product-card--' ~ layout,
+  'product-card--' ~ alignment,
+  'product-card--' ~ spacing,
+  'product-card--' ~ shadow,
+  'product-card--' ~ border,
+  'product-card--' ~ background,
+  'product-card--' ~ text_color,
+  'product-card--' ~ animation,
+  'product-card--' ~ hover_effect,
+  'product-card--' ~ transition
+]|filter %}
+
+<div class="{{ classes|join(' ') }}">
+  {% if badge %}
+    <div class="product-card__badge product-card__badge--{{ badge_color }}">
+      {{ badge }}
+    </div>
+  {% endif %}
+
+  <div class="product-card__image">
+    {{ image }}
+  </div>
+
+  <div class="product-card__content">
+    {% if title %}
+      <h3 class="product-card__title">{{ title }}</h3>
+    {% endif %}
+
+    {% if description %}
+      <div class="product-card__description">{{ description }}</div>
+    {% endif %}
+
+    <div class="product-card__price">{{ price }}</div>
+
+    <button class="product-card__cta">
+      {% if cta_icon %}
+        <span class="product-card__cta-icon">{{ cta_icon }}</span>
+      {% endif %}
+      {{ cta_text }}
+    </button>
+  </div>
+</div>

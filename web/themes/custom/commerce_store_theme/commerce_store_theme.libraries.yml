@@ -1,0 +1,8 @@
+global-styling:
+  css:
+    theme:
+      css/commerce_store_theme.css: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery

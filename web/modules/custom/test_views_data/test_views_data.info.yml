@@ -1,0 +1,8 @@
+name: 'Test Views Data'
+type: module
+description: 'Test module for Views data integration'
+package: Custom
+dependencies:
+  - views
+version: 1.0
+core_version_requirement: ^10

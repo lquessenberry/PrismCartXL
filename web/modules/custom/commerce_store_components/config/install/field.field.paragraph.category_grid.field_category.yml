@@ -1,0 +1,26 @@
+uuid: 12345678-1234-1234-1234-1234567890ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category
+    - paragraphs.paragraphs_type.category_grid
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.category_grid.field_category
+field_name: field_category
+entity_type: paragraph
+bundle: category_grid
+label: Categories
+description: 'Select categories to display in the grid'
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      category: category
+field_type: entity_reference_revisions

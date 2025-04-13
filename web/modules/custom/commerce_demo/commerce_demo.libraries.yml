@@ -1,0 +1,10 @@
+commerce_demo:
+  version: 1.x
+  css:
+    theme:
+      css/commerce-demo.css: {}
+  dependencies:
+    - core/drupal
+    - core/drupal.collapse
+    - core/jquery
+    - core/drupal.dialog.ajax

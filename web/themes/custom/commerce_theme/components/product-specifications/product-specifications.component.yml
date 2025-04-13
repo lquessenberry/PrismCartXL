@@ -1,0 +1,87 @@
+label: Product Specifications
+description: >
+  A component for displaying product specifications in a table or list format.
+
+fields:
+  layout:
+    type: select
+    label: Layout
+    description: Specifications layout style
+    options:
+      table: Table
+      list: List
+      accordion: Accordion
+    default: table
+    required: true
+
+  specifications:
+    type: collection
+    label: Specifications
+    description: List of product specifications
+    items:
+      category:
+        type: text
+        label: Category
+        description: Specification category
+        required: true
+      items:
+        type: collection
+        label: Items
+        description: Specification items within category
+        items:
+          label:
+            type: text
+            label: Label
+            description: Specification label
+            required: true
+          value:
+            type: text
+            label: Value
+            description: Specification value
+            required: true
+          unit:
+            type: text
+            label: Unit
+            description: Measurement unit
+            required: false
+
+  style:
+    type: select
+    label: Style
+    description: Specifications style
+    options:
+      default: Default
+      bordered: Bordered
+      striped: Striped
+      condensed: Condensed
+    default: default
+    required: true
+
+  alignment:
+    type: select
+    label: Alignment
+    description: Specifications alignment
+    options:
+      left: Left
+      center: Center
+      right: Right
+    default: left
+    required: true
+
+  spacing:
+    type: select
+    label: Spacing
+    description: Specifications spacing
+    options:
+      small: Small
+      medium: Medium
+      large: Large
+    default: medium
+    required: true
+
+  show_units:
+    type: boolean
+    label: Show Units
+    description: Display measurement units
+    default: true
+    required: false

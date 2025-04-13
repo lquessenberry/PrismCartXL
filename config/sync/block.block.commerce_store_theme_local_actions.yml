@@ -1,0 +1,20 @@
+uuid: d8d978dd-8c40-4b2a-9feb-532ed8cf862a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - commerce_store_theme
+_core:
+  default_config_hash: ABoKnlk20KHqZRw_2Qr4EvaFvH4lnQ2nuhunHeE1JIU
+id: commerce_store_theme_local_actions
+theme: commerce_store_theme
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

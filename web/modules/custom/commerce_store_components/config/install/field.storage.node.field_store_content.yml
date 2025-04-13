@@ -1,0 +1,19 @@
+uuid: 12345678-1234-1234-1234-1234567890b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - node
+id: node.field_store_content
+field_name: field_store_content
+entity_type: node
+type: paragraphs
+settings:
+  title: 'Store Content'
+  title_plural: 'Store Content'
+  edit_mode: open
+cardinality: -1
+translatable: false
+indexes: {}
+persistent_cache: true

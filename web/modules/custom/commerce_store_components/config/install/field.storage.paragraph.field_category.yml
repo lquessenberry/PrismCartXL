@@ -1,0 +1,21 @@
+uuid: 12345678-1234-1234-1234-1234567890ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - taxonomy
+id: paragraph.field_category
+field_name: field_category
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: taxonomy_term
+  handler: default
+  handler_settings:
+    target_bundles:
+      category: category
+cardinality: -1
+translatable: false
+indexes: {}
+persistent_cache: true

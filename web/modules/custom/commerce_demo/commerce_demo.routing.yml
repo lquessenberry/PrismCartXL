@@ -1,0 +1,15 @@
+commerce_demo.generate:
+  path: '/admin/config/commerce/demo/generate'
+  defaults:
+    _form: '\Drupal\commerce_demo\Form\CommerceDemoGenerateForm'
+    _title: 'Generate Commerce Demo Content'
+  requirements:
+    _permission: 'administer site configuration'
+
+commerce_demo.demo:
+  path: '/demo/commerce'
+  defaults:
+    _controller: '\Drupal\commerce_demo\Controller\CommerceDemoController::demo'
+    _title: 'Commerce Demo'
+  requirements:
+    _permission: 'access content'

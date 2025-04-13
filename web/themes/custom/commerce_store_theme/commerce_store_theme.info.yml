@@ -1,0 +1,14 @@
+name: 'Commerce Store Theme'
+type: theme
+base theme: drupalx_theme
+description: 'Custom theme for the store page'
+package: Custom
+regions:
+  content: Content
+  highlighted: Highlighted
+  help: Help
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+libraries:
+  - commerce_store_theme/global-styling
+core_version_requirement: ^9 || ^10

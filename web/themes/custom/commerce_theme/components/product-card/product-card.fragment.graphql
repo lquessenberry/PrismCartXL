@@ -1,0 +1,30 @@
+fragment ProductCard on Paragraph {
+  __typename
+  id
+  image {
+    url
+    alt
+    width
+    height
+  }
+  title
+  price {
+    amount
+    currencyCode
+  }
+  description
+  ctaText
+  ctaIcon
+  badge
+  badgeColor
+  layout
+  alignment
+  spacing
+  shadow
+  border
+  background
+  textColor
+  animation
+  hoverEffect
+  transition
+}

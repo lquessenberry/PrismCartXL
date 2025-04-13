@@ -1,0 +1,11 @@
+# This is a DDEV and Drupal project
+- Use DDEV for local development
+- Use Composer for dependency management
+- Use Drush for Drupal commands
+- Use Yarn for JavaScript package management
+- Use Drupal for the CMS
+- Use Commerce for e-commerce functionality
+- Use Paragraphs for content blocks
+- Use Views for dynamic content display
+- Use Devel for development
+- /home/lquessenberry/CascadeProjects/windsurf-project/web/modules/custom

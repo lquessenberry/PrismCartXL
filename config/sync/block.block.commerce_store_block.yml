@@ -1,0 +1,18 @@
+uuid: bb1727e9-6d85-4947-b51b-adf571d60319
+langcode: en
+status: true
+dependencies:
+  theme:
+    - commerce_store_theme
+id: commerce_store_block
+theme: commerce_store_theme
+region: content
+weight: 0
+provider: null
+plugin: commerce_store_block
+settings:
+  id: broken
+  label: ''
+  label_display: visible
+  provider: core
+visibility: {  }

@@ -1,0 +1,15 @@
+fragment ProductFeatures on Paragraph {
+  __typename
+  id
+  layout
+  columns
+  spacing
+  alignment
+  style
+  features {
+    icon
+    title
+    description
+    highlight
+  }
+}

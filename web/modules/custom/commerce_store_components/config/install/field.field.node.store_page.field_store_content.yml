@@ -1,0 +1,26 @@
+uuid: 12345678-1234-1234-1234-1234567890b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_store_content
+    - node.type.store_page
+  module:
+    - paragraphs
+id: node.store_page.field_store_content
+field_name: field_store_content
+entity_type: node
+bundle: store_page
+label: 'Store Content'
+description: 'Add store content using paragraphs'
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  allowed_paragraph_types:
+    - banner
+    - product_grid
+    - category_grid
+  allow_multiple_paragraphs: true
+field_type: paragraphs

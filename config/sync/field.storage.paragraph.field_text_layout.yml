@@ -1,0 +1,32 @@
+uuid: 462fec84-9384-48c9-adeb-64bf9e0da782
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: 4QZRaNqTfN1mSmCoYAK7V3W8rcqa017G1_Jwv5Xjzb8
+id: paragraph.field_text_layout
+field_name: field_text_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: centered
+      label: Centered
+    -
+      value: left
+      label: Left-aligned
+    -
+      value: buttons-right
+      label: 'Buttons right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

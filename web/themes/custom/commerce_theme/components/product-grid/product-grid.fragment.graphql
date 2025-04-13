@@ -1,0 +1,44 @@
+fragment ProductGrid on Paragraph {
+  __typename
+  id
+  columns
+  spacing
+  show_filters
+  filters {
+    type
+    label
+    values {
+      value
+    }
+  }
+  show_sort
+  sort_options {
+    field
+    label
+    order
+  }
+  products {
+    id
+    title
+    price {
+      amount
+      currencyCode
+    }
+    images {
+      url
+      alt
+    }
+    variations {
+      id
+      price {
+        amount
+        currencyCode
+      }
+      attributes {
+        id
+        name
+        value
+      }
+    }
+  }
+}

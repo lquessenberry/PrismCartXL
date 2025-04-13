@@ -1,0 +1,20 @@
+uuid: 420256b0-6315-4601-99de-25ec64de7e00
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupalx_theme
+_core:
+  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
+id: drupalx_theme_page_title
+theme: drupalx_theme
+region: primary_menu
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

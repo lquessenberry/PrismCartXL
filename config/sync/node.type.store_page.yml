@@ -1,0 +1,11 @@
+uuid: b4fdbd5f-b146-44c1-ad1b-6024df198bf2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Store Page'
+type: store_page
+description: 'A page that displays products using paragraphs'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

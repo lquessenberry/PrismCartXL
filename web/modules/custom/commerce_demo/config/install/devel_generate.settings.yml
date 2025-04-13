@@ -1,0 +1,33 @@
+commerce_product:
+  count: 50
+  title_length: 10
+  description_length: 100
+  price_min: 10
+  price_max: 1000
+  price_currency: USD
+  images_count: 3
+  variations_count: 2
+  attributes:
+    - color
+    - size
+    - material
+commerce_order:
+  count: 20
+  status: completed
+  items_per_order: 3
+  customer_count: 10
+commerce_store:
+  count: 1
+  name: 'Demo Store'
+  address:
+    country_code: US
+    administrative_area: CA
+    locality: San Francisco
+    postal_code: 94105
+    address_line1: '123 Demo Street'
+commerce_customer:
+  count: 20
+  address_count: 1
+  address_type:
+    - billing
+    - shipping

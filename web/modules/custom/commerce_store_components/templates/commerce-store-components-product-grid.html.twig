@@ -1,0 +1,28 @@
+{% for product in products %}
+  {% set variation = product.getVariations()[0] %}
+  <div class="product-grid-item">
+    <div class="product-image">
+      {% if product.field_image %}
+        <img src="{{ file_url(product.field_image.entity.uri.value) }}" alt="{{ product.field_image.alt }}" />
+      {% endif %}
+    </div>
+    <div class="product-info">
+      <h3>{{ product.title.value }}</h3>
+      <div class="product-price">
+        {{ variation.price.value }}
+      </div>
+      <div class="product-actions">
+        <form action="{{ path('commerce_cart.add-to-cart', {'product_variation': variation.id()}) }}" method="post">
+          <input type="hidden" name="quantity" value="1" />
+          <button type="submit" class="add-to-cart">Add to Cart</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+{% if products|length > items_per_page %}
+  <div class="pagination">
+    <!-- Add pagination logic here -->
+  </div>
+{% endif %}

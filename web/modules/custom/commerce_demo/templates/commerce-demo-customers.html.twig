@@ -1,0 +1,16 @@
+<div class="commerce-demo-customers">
+  <h2>{{ 'Customers'|t }}</h2>
+  <div class="customers-grid">
+    {% for customer in customers %}
+      <div class="customer-card">
+        <h3>{{ customer.first_name }} {{ customer.last_name }}</h3>
+        <p>{{ customer.mail }}</p>
+        <div class="customer-address">
+          <p>{{ customer.billing_address.address_line1 }}</p>
+          <p>{{ customer.billing_address.locality }}, {{ customer.billing_address.administrative_area }}</p>
+          <p>{{ customer.billing_address.postal_code }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

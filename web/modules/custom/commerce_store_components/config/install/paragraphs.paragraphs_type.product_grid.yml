@@ -1,0 +1,21 @@
+uuid: 0301423e-8884-403e-8884-0301423e8884
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_product
+  module:
+    - commerce_product
+    - paragraphs
+id: product_grid
+label: 'Product Grid'
+description: 'Displays a grid of products.'
+behavior_plugins:
+  default_paragraph_behavior:
+    settings:
+      create_revision: false
+      force_default_revision: false
+      use_paragraphs_cache: true
+      use_paragraphs_cache_block: true
+      use_paragraphs_cache_page: true
+      use_paragraphs_cache_views: true

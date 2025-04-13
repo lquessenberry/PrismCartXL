@@ -1,0 +1,27 @@
+uuid: 065fc342-cc49-4d0f-9126-29636b2572c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - commerce_store_theme
+_core:
+  default_config_hash: Gw-7-x64zSTbvXkGFOJryLsaQolVHcuTIGf6SZBUtMU
+id: commerce_store_theme_footer
+theme: commerce_store_theme
+region: content
+weight: -10
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

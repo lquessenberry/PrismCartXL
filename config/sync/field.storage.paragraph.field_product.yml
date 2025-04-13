@@ -1,0 +1,20 @@
+uuid: 12345678-1234-1234-1234-1234567890ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - commerce_product
+id: paragraph.field_product
+field_name: field_product
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: commerce_product
+module: null
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

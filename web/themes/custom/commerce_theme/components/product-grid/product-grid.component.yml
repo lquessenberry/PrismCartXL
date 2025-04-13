@@ -1,0 +1,103 @@
+label: Product Grid
+description: >
+  A component for displaying products in a grid layout.
+
+fields:
+  products:
+    type: entity_reference
+    label: Products
+    description: Select products to display
+    target_type: commerce_product
+    required: true
+    multiple: true
+
+  columns:
+    type: select
+    label: Columns
+    description: Number of columns in the grid
+    options:
+      2: 2
+      3: 3
+      4: 4
+      5: 5
+      6: 6
+    default: 3
+    required: true
+
+  spacing:
+    type: select
+    label: Spacing
+    description: Grid spacing
+    options:
+      small: Small
+      medium: Medium
+      large: Large
+    default: medium
+    required: true
+
+  show_filters:
+    type: boolean
+    label: Show Filters
+    description: Display product filters
+    default: true
+    required: false
+
+  filters:
+    type: collection
+    label: Filter Options
+    description: Available filter options
+    items:
+      type:
+        type: select
+        label: Filter Type
+        description: Type of filter
+        options:
+          category: Category
+          price: Price
+          attribute: Attribute
+        required: true
+      label:
+        type: text
+        label: Label
+        description: Filter label
+        required: true
+      values:
+        type: collection
+        label: Values
+        description: Filter values
+        items:
+          value:
+            type: text
+            label: Value
+            required: true
+
+  show_sort:
+    type: boolean
+    label: Show Sort Options
+    description: Display product sorting options
+    default: true
+    required: false
+
+  sort_options:
+    type: collection
+    label: Sort Options
+    description: Available sort options
+    items:
+      field:
+        type: text
+        label: Field
+        description: Field to sort by
+        required: true
+      label:
+        type: text
+        label: Label
+        description: Sort option label
+        required: true
+      order:
+        type: select
+        label: Order
+        description: Sort order
+        options:
+          asc: Ascending
+          desc: Descending
+        required: true

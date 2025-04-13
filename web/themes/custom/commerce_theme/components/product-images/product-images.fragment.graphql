@@ -1,0 +1,22 @@
+fragment ProductImages on Paragraph {
+  __typename
+  id
+  layout
+  thumbnails
+  zoom
+  navigation
+  autoplay
+  autoplay_speed
+  show_captions
+  show_navigation
+  images {
+    image {
+      url
+      alt
+      width
+      height
+    }
+    caption
+    is_main
+  }
+}

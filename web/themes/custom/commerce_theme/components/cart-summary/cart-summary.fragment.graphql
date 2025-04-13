@@ -1,0 +1,53 @@
+fragment CartSummary on Paragraph {
+  __typename
+  id
+  show_item_images
+  show_item_prices
+  show_subtotal
+  show_tax
+  show_shipping
+  show_total
+  show_checkout_button
+  checkout_button_text
+  show_continue_shopping
+  continue_shopping_text
+  cart {
+    id
+    items {
+      id
+      quantity
+      unitPrice {
+        amount
+        currencyCode
+      }
+      totalPrice {
+        amount
+        currencyCode
+      }
+      product {
+        id
+        title
+        images {
+          url
+          alt
+        }
+      }
+    }
+    subtotal {
+      amount
+      currencyCode
+    }
+    tax {
+      amount
+      currencyCode
+    }
+    shipping {
+      amount
+      currencyCode
+    }
+    total {
+      amount
+      currencyCode
+    }
+  }
+}

@@ -1,0 +1,21 @@
+uuid: 12345678-1234-1234-1234-1234567890ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - image
+    - paragraphs
+id: paragraph.field_banner_image
+field_name: field_banner_image
+entity_type: paragraph
+type: image
+settings:
+  file_directory: 'paragraphs/banner'
+  file_extensions: 'png jpg jpeg webp'
+  max_filesize: '10 MB'
+  max_resolution: ''
+  min_resolution: ''
+cardinality: 1
+translatable: false
+indexes: {}
+persistent_cache: true

@@ -1,0 +1,22 @@
+uuid: 12345678-1234-1234-1234-1234567890af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_image
+    - paragraphs.paragraphs_type.banner
+  module:
+    - paragraphs
+    - image
+id: paragraph.banner.field_banner_image
+field_name: field_banner_image
+entity_type: paragraph
+bundle: banner
+label: 'Banner Image'
+description: 'Upload a banner image'
+required: true
+translatable: false
+default_value: []
+default_value_callback: ''
+settings: {}
+field_type: image

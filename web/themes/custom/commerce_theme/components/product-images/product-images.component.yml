@@ -1,0 +1,101 @@
+label: Product Images
+description: >
+  A component for displaying product images with variations and zoom functionality.
+
+fields:
+  layout:
+    type: select
+    label: Layout
+    description: Images layout style
+    options:
+      gallery: Gallery
+      slider: Slider
+      grid: Grid
+      carousel: Carousel
+    default: gallery
+    required: true
+
+  images:
+    type: collection
+    label: Images
+    description: List of product images
+    items:
+      image:
+        type: image
+        label: Image
+        description: Product image
+        required: true
+      alt:
+        type: text
+        label: Alt Text
+        description: Alternative text for accessibility
+        required: true
+      caption:
+        type: text
+        label: Caption
+        description: Image caption
+        required: false
+      is_main:
+        type: boolean
+        label: Main Image
+        description: Is this the main product image?
+        default: false
+        required: false
+
+  thumbnails:
+    type: select
+    label: Thumbnails
+    description: Thumbnail display style
+    options:
+      below: Below
+      side: Side
+      none: None
+    default: below
+    required: true
+
+  zoom:
+    type: boolean
+    label: Enable Zoom
+    description: Enable image zoom functionality
+    default: true
+    required: false
+
+  navigation:
+    type: select
+    label: Navigation
+    description: Navigation controls style
+    options:
+      dots: Dots
+      arrows: Arrows
+      both: Both
+      none: None
+    default: both
+    required: true
+
+  autoplay:
+    type: boolean
+    label: Autoplay
+    description: Enable automatic slideshow
+    default: false
+    required: false
+
+  autoplay_speed:
+    type: number
+    label: Autoplay Speed
+    description: Speed of automatic slideshow (in milliseconds)
+    default: 3000
+    required: false
+
+  show_captions:
+    type: boolean
+    label: Show Captions
+    description: Display image captions
+    default: true
+    required: false
+
+  show_navigation:
+    type: boolean
+    label: Show Navigation
+    description: Display navigation controls
+    default: true
+    required: false

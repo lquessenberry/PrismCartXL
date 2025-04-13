@@ -1,0 +1,82 @@
+label: Product Features
+description: >
+  A component for displaying product features in a list or grid format.
+
+fields:
+  layout:
+    type: select
+    label: Layout
+    description: Features layout style
+    options:
+      list: List
+      grid: Grid
+      columns: Columns
+    default: list
+    required: true
+
+  columns:
+    type: number
+    label: Number of Columns
+    description: Number of columns for grid layout
+    default: 3
+    required: false
+
+  features:
+    type: collection
+    label: Features
+    description: List of product features
+    items:
+      icon:
+        type: text
+        label: Icon
+        description: Feature icon (e.g., checkmark, star)
+        required: false
+      title:
+        type: text
+        label: Title
+        description: Feature title
+        required: true
+      description:
+        type: text
+        label: Description
+        description: Feature description
+        required: false
+      highlight:
+        type: boolean
+        label: Highlight
+        description: Highlight this feature
+        default: false
+        required: false
+
+  spacing:
+    type: select
+    label: Spacing
+    description: Features spacing
+    options:
+      small: Small
+      medium: Medium
+      large: Large
+    default: medium
+    required: true
+
+  alignment:
+    type: select
+    label: Alignment
+    description: Features alignment
+    options:
+      left: Left
+      center: Center
+      right: Right
+    default: left
+    required: true
+
+  style:
+    type: select
+    label: Style
+    description: Features style
+    options:
+      default: Default
+      bordered: Bordered
+      card: Card
+    default: default
+    required: true

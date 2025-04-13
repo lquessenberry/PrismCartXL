@@ -1,0 +1,22 @@
+uuid: 67ace8a3-b78c-4930-bc01-511fad7f92ac
+langcode: en
+status: false
+dependencies:
+  theme:
+    - commerce_store_theme
+_core:
+  default_config_hash: T0wbI6qVdThbbIqXDZFg_1VZ3_ittXBdEoUH7d7ux_E
+id: commerce_store_theme_local_tasks
+theme: commerce_store_theme
+region: content
+weight: -20
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,170 @@
+label: Product Card
+description: >
+  A reusable component for displaying product information with an image, title,
+  price, and add to cart functionality.
+
+fields:
+  image:
+    type: image
+    label: Image
+    description: Product image to display
+    required: true
+
+  title:
+    type: text
+    label: Title
+    description: Product title
+    required: true
+
+  price:
+    type: text
+    label: Price
+    description: Product price
+    required: true
+
+  description:
+    type: text
+    label: Description
+    description: Brief product description
+    required: false
+
+  cta_text:
+    type: text
+    label: CTA Text
+    description: Text for the "Add to Cart" button
+    default: Add to Cart
+    required: true
+
+  cta_icon:
+    type: text
+    label: CTA Icon
+    description: Icon to display with the CTA button
+    default: cart
+    required: false
+
+  badge:
+    type: text
+    label: Badge
+    description: Optional badge text (e.g., "New", "Sale")
+    required: false
+
+  badge_color:
+    type: text
+    label: Badge Color
+    description: Color for the badge
+    default: primary
+    required: false
+
+  layout:
+    type: select
+    label: Layout
+    description: Card layout style
+    options:
+      default: Default
+      modern: Modern
+      compact: Compact
+    default: default
+    required: true
+
+  alignment:
+    type: select
+    label: Alignment
+    description: Card content alignment
+    options:
+      left: Left
+      center: Center
+      right: Right
+    default: center
+    required: true
+
+  spacing:
+    type: select
+    label: Spacing
+    description: Card spacing
+    options:
+      small: Small
+      medium: Medium
+      large: Large
+    default: medium
+    required: true
+
+  shadow:
+    type: select
+    label: Shadow
+    description: Card shadow style
+    options:
+      none: None
+      small: Small
+      medium: Medium
+      large: Large
+    default: medium
+    required: true
+
+  border:
+    type: select
+    label: Border
+    description: Card border style
+    options:
+      none: None
+      solid: Solid
+      dashed: Dashed
+      dotted: Dotted
+    default: solid
+    required: true
+
+  background:
+    type: select
+    label: Background
+    description: Card background style
+    options:
+      transparent: Transparent
+      light: Light
+      dark: Dark
+    default: light
+    required: true
+
+  text_color:
+    type: select
+    label: Text Color
+    description: Card text color
+    options:
+      default: Default
+      light: Light
+      dark: Dark
+    default: default
+    required: true
+
+  animation:
+    type: select
+    label: Animation
+    description: Card animation on hover
+    options:
+      none: None
+      scale: Scale
+      lift: Lift
+      fade: Fade
+    default: scale
+    required: true
+
+  hover_effect:
+    type: select
+    label: Hover Effect
+    description: Card hover effect
+    options:
+      none: None
+      color: Color Change
+      shadow: Shadow Change
+      border: Border Change
+    default: color
+    required: true
+
+  transition:
+    type: select
+    label: Transition
+    description: Card transition style
+    options:
+      instant: Instant
+      smooth: Smooth
+      slow: Slow
+    default: smooth
+    required: true

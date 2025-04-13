@@ -1,0 +1,14 @@
+fragment CheckoutSteps on Paragraph {
+  __typename
+  id
+  layout
+  show_progress
+  show_descriptions
+  show_icons
+  steps {
+    title
+    description
+    icon
+    status
+  }
+}

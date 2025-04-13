@@ -1,0 +1,17 @@
+<div class="commerce-demo-products">
+  <h2>{{ 'Products'|t }}</h2>
+  <div class="products-grid">
+    {% for product in products %}
+      <div class="product-card">
+        <h3>{{ product.title.value }}</h3>
+        <p>{{ product.variations[0].price.amount }} {{ product.variations[0].price.currency_code }}</p>
+        <div class="product-attributes">
+          {% for attribute in product.variations[0].attributes %}
+            <span class="attribute">{{ attribute.key }}: {{ attribute.value }}</span>
+          {% endfor %}
+        </div>
+        <a href="{{ path('entity.commerce_product.canonical', {'commerce_product': product.id}) }}" class="btn">View Product</a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

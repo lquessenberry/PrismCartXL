@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * Implements hook_help().
+ */
+function commerce_demo_help($route_name, \Drupal\Core\Render\RendererInterface $renderer) {
+  switch ($route_name) {
+    case 'help.page.commerce_demo':
+      $output = \Drupal::translation()->translate(
+        '<h2>Commerce Demo Module</h2>
+        <p>This module provides demo content and configuration for Commerce.</p>
+        <p>It includes:</p>
+        <ul>
+          <li>Sample products with variations</li>
+          <li>Product attributes (color, size, material)</li>
+          <li>Sample orders and customers</li>
+          <li>Store configuration</li>
+        </ul>
+        <p>To generate demo content, use the Devel Generate interface or run:</p>
+        <code>drush generate commerce-demo</code>
+        '
+      );
+      return $output;
+  }
+}

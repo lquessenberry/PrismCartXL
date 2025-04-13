@@ -1,0 +1,9 @@
+name: 'Commerce Paragraphs'
+type: module
+description: 'Provides paragraph types for commerce functionality'
+core_version_requirement: ^10
+package: Custom
+configure: commerce_paragraphs.settings
+dependencies:
+  - paragraphs
+  - commerce_product

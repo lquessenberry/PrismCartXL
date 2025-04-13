@@ -1,0 +1,13 @@
+name: Commerce Demo
+package: Custom
+description: Provides demo content and configuration for Commerce
+version: 1.0.0
+type: module
+core_version_requirement: ^10
+dependencies:
+  - drupal/devel_generate
+  - drupal/commerce
+  - drupal/commerce_product
+  - drupal/commerce_order
+  - drupal/commerce_store
+  - drupal/commerce_customer

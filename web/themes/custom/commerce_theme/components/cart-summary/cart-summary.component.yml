@@ -1,0 +1,74 @@
+label: Cart Summary
+description: >
+  A component for displaying the shopping cart summary.
+
+fields:
+  show_item_images:
+    type: boolean
+    label: Show Item Images
+    description: Display product images in cart
+    default: true
+    required: false
+
+  show_item_prices:
+    type: boolean
+    label: Show Item Prices
+    description: Display individual item prices
+    default: true
+    required: false
+
+  show_subtotal:
+    type: boolean
+    label: Show Subtotal
+    description: Display cart subtotal
+    default: true
+    required: false
+
+  show_tax:
+    type: boolean
+    label: Show Tax
+    description: Display tax amount
+    default: true
+    required: false
+
+  show_shipping:
+    type: boolean
+    label: Show Shipping
+    description: Display shipping cost
+    default: true
+    required: false
+
+  show_total:
+    type: boolean
+    label: Show Total
+    description: Display cart total
+    default: true
+    required: false
+
+  show_checkout_button:
+    type: boolean
+    label: Show Checkout Button
+    description: Display checkout button
+    default: true
+    required: false
+
+  checkout_button_text:
+    type: text
+    label: Checkout Button Text
+    description: Text for the checkout button
+    default: Proceed to Checkout
+    required: false
+
+  show_continue_shopping:
+    type: boolean
+    label: Show Continue Shopping
+    description: Display continue shopping link
+    default: true
+    required: false
+
+  continue_shopping_text:
+    type: text
+    label: Continue Shopping Text
+    description: Text for continue shopping link
+    default: Continue Shopping
+    required: false
